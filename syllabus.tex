@@ -1,0 +1,119 @@
+
+\documentclass[12pt]{article}
+
+
+%%% PACKAGES
+
+\usepackage{bibentry} %to use intext full bibliography entries instead of citations.  You will need a separate BibTex database for this to work.  See http://cst.usc.edu/services/tel/grants/legrants.html for details on this package.
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information 
+\geometry{margin=1in} % for example, change the margins to 1 inches all round
+%\geometry{landscape} % set up the page for landscape
+% 
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%\rfoot{\footnotesize SIR 330}
+\rhead{\footnotesize SIR 330 Syllabus}
+\renewcommand\footrulewidth{0pt}
+
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+
+%% END Article customise
+
+%%% BEGIN DOCUMENT
+
+
+\begin{document}
+
+
+\thispagestyle{plain} %alternatively specify empty to get no footer on first page.  This is part of the fancyhdr package
+
+
+\nobibliography{MasterBib} %this specifies the BibTex directory that stores your desired bibliography entries.  It has to come before any \bibentry lines are invoked
+
+\bibliographystyle{apalike} %be careful here, there is only a few styles that will run
+
+
+%\tableofcontents
+
+\begin{center}
+\LARGE{\bf{Introduction to Python}}
+
+\textsc{UC Berkeley Biophysics, Fall 2014} \bigskip
+
+\end{center}
+
+\noindent\textbf{Instructors: }Rachel Albert \& Mike Schachter\medskip
+
+\noindent\textbf{Time and Location:} T, Th 4:00-5:30pm, Location TBD\medskip
+
+\noindent\textbf{Contact:} rachelalbert@berkeley.edu, mike.schacter@gmail.com\medskip
+
+\bigskip
+
+\section*{Overview and Objectives}%starred section will eliminate numbering; remove stars to get numbered sections especially if you are using TOC for some reason in your syllabus
+This course is a one month introduction to the Python programming language. No prior programming experience is required. We will cover the following topics: how to set up your programming environment; how to use variables, data structures, conditional statements, loops, and functions; how to input and output data to and from Python; and an introduction to several useful scientific Python libraries.
+
+\section*{Course Outline}
+
+\subsection*{Installation and Setup \textnormal{\small{(9/2)} }}
+\begin{itemize}
+\item Course introduction
+\item Installing Python
+\item Setting up your environment
+\item Package management \\\\
+\it{Homework: Git tutorial}
+\end{itemize}
+
+\subsection*{Source control \textnormal{\small{(9/4)} }}
+\begin{itemize}
+\item Git overview
+\item Accessing and turning in assignments
+\item ??? \\\\
+\it{Class project: *}\\
+\it{Homework: Strings tutorial}
+\end{itemize}
+
+\subsection*{Input/Output \textnormal{\small{(9/9)} }}
+\begin{itemize}
+\item Command line interface
+\item IPython \& IPython notebook
+\item Variables (strings and numbers) \\\\
+\it{Class project: Conditional statements}\\
+\it{Homework: Data structures tutorial}
+\end{itemize}
+
+\subsection*{Manipulating data \textnormal{\small{(9/11)} }}
+\begin{itemize}
+\item Data structures overview
+\item Loops \\\\
+\it{Class project: }\\
+\it{Homework: Functions tutorial}
+\end{itemize}
+
+\subsection*{Processing data \textnormal{\small{(9/11)} }}
+\begin{itemize}
+\item Functions
+\item File I/O \\\\
+\it{Homework: * tutorial}
+\end{itemize}
+
+\end{document} 
